@@ -47,22 +47,23 @@ https://j2logo.com/python/convertir-a-mayusculas-y-minusculas-en-python/#:~:text
 ### Listado de las 50 palabras que más se repiten
 ```python
 
-from collections import counter
+from collections import Counter
 
-with open("mbox-short.txt", "r") as ms:
+with open("mbox-short.txt", "r", encoding="utf-8") as ms:
     vocales = 0
     consonantes = 0
-    for letra infor letra in ms.read():
+    for letra in ms.read():
         if letra.lower() in "aeiouáéíóú":
-            vocales = vocales + 1
+            vocales += 1
         else:
-            consonantes = consonantes + 1
+            consonantes += 1
     print(f"La cantidad de consonantes es {consonantes}")
     print(f"La cantidad de vocales es {vocales}")
 
-    archivo = ms.read()
-    archivo = ms.split()
+    ms.seek(0)  
+
+    archivo = ms.read().split()
     repetidas = Counter(archivo).most_common(50)
-    
-    print(f"las palabras que más se repiten son: {repetidas}")
+
+    print(f"Las palabras que más se repiten son: {repetidas}")
 ```
