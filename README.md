@@ -1,5 +1,5 @@
 # Reto_12
-# Consulte que hacen los siguientes métodos de strings en python: endswith, startswith, isalpha, isalnum, isdigit, isspace, istitle, islower, isupper.
+### Consulte que hacen los siguientes métodos de strings en python: endswith, startswith, isalpha, isalnum, isdigit, isspace, istitle, islower, isupper.
 ### endswith
 Es una función de manipulación de series de caracteres que manipula todos los tipos de datos (BIT, BLOB y CHARACTER) y devuelve un valor booleano para indicar si una serie de caracteres finaliza por otra.
 
